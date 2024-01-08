@@ -6,7 +6,7 @@ import os
 
 
 def create_output_folder(input_folder):
-    output_folder = os.path.join(input_folder, "output")
+    output_folder = os.path.join(input_folder, "GrayScale")
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
     return output_folder
