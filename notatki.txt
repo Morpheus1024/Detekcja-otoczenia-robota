@@ -32,3 +32,8 @@ y_pred = model.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 print(f'Dokładność modelu: {accuracy}')
 
+
+Pomysły na Kernele:
+1. Kernel do obracania zdjęcia, resize i normalizacji - Mateusz
+2. Kernel do mirroringu zdjęć, resize i normalizacja - Kuba
+3. Kernel RGB -> Skala szarości, resize i normalizacja - Mikołaj
