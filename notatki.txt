@@ -1,3 +1,12 @@
 Augmentor do obróbki datasetu
 SKlearn do uczenia
 Pillow/opencv - przygotować zdjęcia jako dane do modeli treningowych
+
+Przystosowanie danych:
+Zdjęcia powinny być tego samego rozmiaru, kolorowe
+Normalizacja pikseli 0-1. Możesz użyć narzędzi takich jak MinMaxScaler z sklearn.preprocessing w Pythonie.
+Obracanie, odbicia lustrzane itp. Biblioteki takie jak ImageDataGenerator w przypadku TensorFlow lub Keras mogą ułatwić ten proces.
+Upewnij się, że masz odpowiednie etykiety (znaczniki) dla każdego obrazu, wskazujące, do której klasy należy. Znaczniki te są niezbędne do trenowania modelu nadzorowanego.
+Zastosowanie Jąder (w przypadku SVM):
+Jeśli używasz Support Vector Machine (SVM) i masz dane, które nie są liniowo separowalne, możesz rozważyć zastosowanie jąder do przekształcenia danych do przestrzeni o wyższej wymiarowości.
+Podział na Zbiór Treningowy i Testowy
