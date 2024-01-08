@@ -1,0 +1,3 @@
+Augmentor do obróbki datasetu
+SKlearn do uczenia
+Pillow/opencv - przygotować zdjęcia jako dane do modeli treningowych
