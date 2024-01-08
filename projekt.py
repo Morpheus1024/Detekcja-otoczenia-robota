@@ -1,3 +1,0 @@
-import numba
-
-print("helloworld")
