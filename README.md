@@ -8,6 +8,7 @@
 - Obracanie obrazu
 - Zamiana kolorów na skalę szarości
 - Tworzenie kopii lustrzanej
+- Tworzenie histogramu obrazu
 
 ### Wykorzystane biblioteki Pythona
 
