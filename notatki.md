@@ -11,10 +11,6 @@ Zastosowanie Jąder (w przypadku SVM):
 Jeśli używasz Support Vector Machine (SVM) i masz dane, które nie są liniowo separowalne, możesz rozważyć zastosowanie jąder do przekształcenia danych do przestrzeni o wyższej wymiarowości.
 Podział na Zbiór Treningowy i Testowy
 
-
-
-
-
 Działanie na modelu:
 	1. import bibliotek:
 from sklearn.model_selection import train_test_split
