@@ -9,6 +9,7 @@
 - Zamiana kolorów na skalę szarości
 - Tworzenie kopii lustrzanej
 - Tworzenie histogramu obrazu
+- Wykrywanie butelek i tworzenie bounding boxa
 
 ### Wykorzystane biblioteki Pythona
 
@@ -16,3 +17,8 @@
 - Numpy
 - OpenCV
 - Matplotlib
+- Os
+- Tensorflow
+- Torchvision
+- PIL
+- Torch
