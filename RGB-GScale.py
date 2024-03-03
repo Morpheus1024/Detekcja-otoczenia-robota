@@ -13,20 +13,27 @@ def create_output_folder(input_folder):
 
 def RGB_GSCALE(filename, output):
     img = cv2.imread(filename)
-    height, width, _ = img.shape
+
+    resized_img1 = cv2.resize(img, (720,1280))
+    img = resized_img1
+
+    height, width, _ = resized_img1.shape
+
     gray_img1 = np.zeros((height, width), dtype=np.uint8)
+
+
 
     for i in range(height):
         for j in range(width):
             gray_img1[i, j] = (img[i, j, 0] * 0.299 + img[i, j, 1] * 0.587 + img[i, j, 2] * 0.114)
 
-    resized_img1 = cv2.resize(gray_img1, (720,1280))
+
 
     output_image1 = os.path.join(output, os.path.splitext(filename)[0] + "_gray1.jpg")
 
     cv2.imwrite(output_image1, resized_img1)
 
-input_folder = '/home/mikolaj/GitHub/Detekcja-wizyjna-odpad-w-komunalnych/dataset/butelki/train_data'
+input_folder = '/home/mikolaj/Github/Detekcja-otoczenia-robota/dataset/butelki/train_data'
 output = create_output_folder(input_folder)
 
 for filename in os.listdir(input_folder):

@@ -3,8 +3,8 @@ import numpy as np
 import os
 ## czas wykonania na CPU to około 1 minuta
 
-output_path = '/home/mikolaj/GitHub/Detekcja-wizyjna-odpad-w-komunalnych/dodanie_szumow'  # Specify the output folder
-dataset_path = '/home/mikolaj/GitHub/Detekcja-wizyjna-odpad-w-komunalnych/dataset/butelki/train_data'
+output_path = '/home/mikolaj/Github/Detekcja-otoczenia-robota/dataset/butelki/add_noise'  # Specify the output folder
+dataset_path = '/home/mikolaj/Github/Detekcja-otoczenia-robota/dataset/butelki/train_data'
 
 def add_noise(image, mean=0, sigma=100):
     row, col, ch = image.shape

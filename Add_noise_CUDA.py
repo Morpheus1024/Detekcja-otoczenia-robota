@@ -1,11 +1,10 @@
 import cv2
 import numpy as np
 import os
-import numba
 from numba import cuda
 
-output_path = '/home/mikolaj/GitHub/Detekcja-wizyjna-odpad-w-komunalnych/dodanie_szumow'  # Specify the output folder
-dataset_path = '/home/mikolaj/GitHub/Detekcja-wizyjna-odpad-w-komunalnych/dataset/butelki/train_data'
+output_path = '/home/mikolaj/Github/Detekcja-otoczenia-robota/dataset/butelki/add_noise'  # Specify the output folder
+dataset_path = '/home/mikolaj/Github/Detekcja-otoczenia-robota/dataset/butelki/train_data'
 
 @cuda.jit
 def add_noise_cuda(image, noisy, mean, sigma):
